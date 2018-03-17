@@ -10,4 +10,11 @@ make an element follow the mouse with animation in a canvas
 
 Include the script
 
-**$('.canvas').mousefollower();**
+**
+<div class="canvas">
+    <span class="badge badge-primary">Visit the website</span>
+    <img src="/uploads/thumb-1-lg.jpg" class="embed-responsive" alt="" />
+</div>
+
+$('.canvas').mousefollower();**
+
