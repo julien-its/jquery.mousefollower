@@ -16,6 +16,9 @@
 
         return this.each(function(index, canvas)
         {
+            if($(canvas).data('mousefollower') == true){
+                return false;
+            }
             var mouseX = 0, mouseY = 0, $canvas=null, loop = null, xp=0, yp=0;
             $(canvas).mouseenter(function(e){
                 clearInterval(loop);
@@ -70,7 +73,7 @@
                         clearInterval(loop);
                     }
                 }, 30);
-            });
+            }).data('mousefollower', true);
         });
     };
 })(jQuery);
